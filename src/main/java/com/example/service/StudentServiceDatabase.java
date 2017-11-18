@@ -51,4 +51,10 @@ public class StudentServiceDatabase implements StudentService {
 		log.info("select course with id_Course {}", id);
 		return studentMapper.selectCourse(id);
 	}
+
+	@Override
+	public List<CourseModel> selectAllCourse() {
+		// TODO Auto-generated method stub
+		return studentMapper.selectAllCourse();
+	}
 }
